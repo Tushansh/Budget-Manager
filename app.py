@@ -81,7 +81,7 @@ def categorize_transaction(transaction):
     # Preprocess transaction data
     transaction = pd.DataFrame(transaction, index=[0])
     # Load the original dataset
-    df = pd.read_csv('Daily_Household_Transactions.csv')
+    df = pd.read_csv('Daily _Household _Transactions.csv')
     # Group by 'Category' and calculate average expenses
     category_avg_expenses = df.groupby('Category')['Amount'].mean().reset_index()
     # Get the average expense for the category
@@ -157,7 +157,7 @@ def main():
         # Convert the transaction dictionary to a pandas dataframe
         transaction_df = pd.DataFrame([transaction])
         # Append the transaction to the daily household transactions CSV file
-        transaction_df.to_csv('Daily_Household_Transactions.csv', mode='a', header=False, index=False)
+        transaction_df.to_csv('Daily _Household _Transactions.csv', mode='a', header=False, index=False)
         st.write("Record updated")  
      # Analyse button
     if st.button("Analyse"):
