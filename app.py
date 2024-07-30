@@ -11,7 +11,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 # Load dataset
-df = pd.read_csv('Daily_Household_Transactions.csv')
+df = pd.read_csv('Daily _Household _Transactions.csv')
 categories = [
     'Transportation', 'Food', 'Subscription', 'Festivals', 'Other', 'Small Cap fund 2',
     'Small cap fund 1', 'Family', 'Equity Mutual Fund E', 'Apparel', 'Public Provident Fund',
